@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интересные факты о числах и датах</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Numbers section -->
+        <div class="section" id="numbers">
+            <h2>Numbers</h2>
+            <div class="tile-container" id="numbers-tiles"></div>
+            <div class="input-container">
+                <input type="number" id="number-input" placeholder="Введите число">
+                <button onclick="getNumberFact()">get</button>
+            </div>
+        </div>
+
+        <!-- Dates section -->
+        <div class="section" id="dates">
+            <h2>Dates</h2>
+            <div class="tile-container" id="dates-tiles"></div>
+            <div class="input-container">
+                <input type="date" id="date-input">
+                <button onclick="getDateFact()">get</button>
+            </div>
+        </div>
+
+        <!-- Math section -->
+        <div class="section" id="math">
+            <h2>Math</h2>
+            <div class="tile-container" id="math-tiles"></div>
+            <div class="input-container">
+                <input type="number" id="math-input" placeholder="Введите число">
+                <button onclick="getMathFact()">get</button>
+            </div>
+        </div>
+
+        <!-- Pop-up -->
+        <div class="pop-up" id="popup">
+            <div class="pop-up-content" id="popup-content"></div>
+            <button onclick="closePopup()">Закрыть</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
